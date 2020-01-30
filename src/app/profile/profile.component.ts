@@ -1,0 +1,21 @@
+import { Component, OnInit, ViewChild } from '@angular/core';
+
+
+@Component({
+  selector: 'app-profile',
+  templateUrl: './profile.component.html',
+  styleUrls: ['./profile.component.scss']
+})
+export class ProfileComponent implements OnInit {
+
+  @ViewChild('typewriter', {static: true}) typewriterElement;
+
+  ngOnInit() {
+
+  }
+
+  constructor() {
+  }
+
+
+}
