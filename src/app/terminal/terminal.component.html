@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="terminal-window">
+    <div class="header">
+      <nav class="controls">
+        <span class="control-item control-close"><i class="bull"></i></span>
+        <span class="control-item control-minimize"><i class="bull"></i></span>
+        <span class="control-item control-open"><i class="bull"></i></span>
+      </nav>
+    </div>
+    <main>
+      <div class="terminal">
+
+        <ng-template ngFor let-item [ngForOf]="items" let-i="index" [ngForTrackBy]="trackByFn">
+          <div class="line command">
+            <pre><span class="dollar">xchopin&gt; </span><span class="command">{{ items.name }}</span></pre>
+          </div>
+          <div class="line red">
+            <pre>Core Member</pre>
+          </div>
+          <div class="line">
+            <pre>Open-source learning analytics Java components for institutions</pre>
+          </div>
+          <div class="line">
+            <pre>[#########################]</pre>
+          </div>
+        </ng-template>
+
+
+        <div class="line">
+          <pre>[####################<span class="load"></span>    ]</pre>
+        </div>
+
+        <div class="prompt line">
+          <pre><span class="dollar">xchopin&gt; </span><span contenteditable="true" class="command"></span><span class="pulse">_</span></pre>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+<br>
+<br>

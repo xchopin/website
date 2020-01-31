@@ -6,13 +6,19 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { ProfileComponent } from './profile/profile.component';
 import { IntroComponent } from './intro/intro.component';
+import { ResumeComponent } from './resume/resume.component';
+import { TerminalComponent } from './terminal/terminal.component';
+import { ResumeListComponent } from './resume-list/resume-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     ProfileComponent,
-    IntroComponent
+    IntroComponent,
+    ResumeComponent,
+    TerminalComponent,
+    ResumeListComponent
   ],
   imports: [
     BrowserModule,
