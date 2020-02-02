@@ -6,14 +6,16 @@ pre {
 
 .terminal {
   min-height: 100%;
-  background: #232323;
+  background: #2b3343;
   color: #fff !important;
   font-family: monospace;
   padding: 10px;
   font-weight: 300;
   font-size: 14px;
   line-height: 1.5;
-  box-sizing: border-box
+  box-sizing: border-box;
+
+
 }
 
 .terminal *::selection {
@@ -103,14 +105,15 @@ pre {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 800px;
-  height: 430px;
+  max-width: 1000px;
+  height: 460px;
   bottom: 0;
   left: calc(50vw - 400px);
-  background: #353a5b;
+  background: #040406;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   transition: all .5s;
-  margin: auto
+  margin: auto;
+  border-radius: 6px 6px 0px 0px;
 }
 
 .terminal-window.minimized {
@@ -122,6 +125,7 @@ pre {
   max-height: 25px;
   background: #D5D5D5;
   position: relative;
+  border-radius: 5px 5px 0px 0px;
   padding: 0
 }
 
