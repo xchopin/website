@@ -8,15 +8,15 @@ import {Component, Input, OnInit} from '@angular/core';
 export class ResumeListComponent implements OnInit {
 
   @Input()
-  private title: string;
+  title: string;
   @Input()
-  private date: string;
+  date: string;
   @Input()
-  private location: string;
+  location: string;
   @Input()
-  private description: string;
+  description: string;
   @Input()
-  private tasks: Array<string>;
+  tasks: Array<string>;
 
   constructor() {
   }
