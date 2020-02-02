@@ -1,14 +1,28 @@
-<app-resume-list
-  title="University of Lorraine"
-  date="October 2017 - December 2019"
-  location="Nancy, France"
-  description="Lead developer for the creation of Big Data tools for the French Higher Education system in a machine-learning context (Learning Analytics)"
-  [tasks]="[
-  'Main contributor of a scalable data warehouse Java API for Big Data (Spring-Boot, MongoDB)',
-  'NoSQL data modeling through open standards',
-  'Developed Python scripts for treating large data volumes from SQL, LDAP and CSV sources',
-  'Full-stack development of an i18n PHP web application for a large user population (Symfony)',
-  'DevOps tasks (CentOS/RHEL administration, Git, Docker, Dockerfile, Logstash, CI/CD)'
-  ]">
+<div class="container section">
+  <div class="row">
+    <div class="col-md-12">
+      <h2 id="resume" class="section-title">Resume<span class="pulse">_</span></h2>
+      <div class="resume-list">
+        <h3 class="title">Work experience</h3>
+        <app-resume-list *ngFor="let experience of experiences"
+                         [title]="experience.title"
+                         [date]="experience.date"
+                         [location]="experience.location"
+                         [description]="experience.description"
+                         [tasks]="experience.tasks"
+        >
+        </app-resume-list>
 
-</app-resume-list>
+        <h3 style="margin-top: 2.5em;" class="title">Education</h3>
+
+        <app-resume-list *ngFor="let education of educations"
+                         [title]="education.title"
+                         [date]="education.date"
+                         [location]="education.location"
+                         [description]="education.description"
+        >
+        </app-resume-list>
+      </div>
+    </div>
+  </div>
+</div>
