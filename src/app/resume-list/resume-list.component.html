@@ -1,21 +1,15 @@
-<div class="container section">
-  <div class="row">
-    <div class="col-md-12">
-      <div class="resume-list">
-        <div class="block">
-          <span class="title">{{ title }}</span> <br/>
-          <span class="date">{{ date }}</span> <br/>
-          <span class="location">{{ location}}</span>
-          <div class="content">
-            <span class="description">
-             {{description}}
-            </span>
-            <ul *ngFor="let task of tasks" class="dashed">
-              <li>{{task}}</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
+<div class="block">
+  <span class="title">{{ title }}</span> <br/>
+  <span class="date">{{ date }}</span> <br/>
+  <span class="location">{{ location}}</span>
+  <div class="content">
+    <span class="description">
+     {{description}}
+    </span>
+    <ul *ngFor="let task of tasks" class="dashed">
+      <li>{{task}}</li>
+    </ul>
   </div>
 </div>
+
+
