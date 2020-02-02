@@ -2,6 +2,12 @@
   margin-bottom: 5em;
 }
 
+span.pulse {
+  animation: pulse 1s ease-in-out infinite;
+  text-shadow: 0 0 0 #e6e0e0
+}
+
+
 a {
   color: #6d56c1;
   transition: all .3s;
@@ -41,6 +47,13 @@ a {
   margin-top: 10px;
   position: relative;
   top: 40px;
+}
+
+
+@media screen and (max-width:990px) {
+  .personal-profile .personal-profile-avatar {
+    display: none
+  }
 }
 
 
