@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResumeComponent implements OnInit {
 
-  private experiences = [
+   experiences = [
     {
       title: 'Data Engineer @ University of Lorraine',
       date: 'October 2017 - December 2019',
@@ -45,7 +45,7 @@ export class ResumeComponent implements OnInit {
   ];
 
 
-  private educations = [
+  educations = [
     {
       title: 'Bachelor\'s Degree in Computer Science',
       date: '2016 - 2017',
