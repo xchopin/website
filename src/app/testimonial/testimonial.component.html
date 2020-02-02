@@ -1,0 +1,55 @@
+<div id="testimonials" class="section">
+  <div class="background slider-carousel" style="background-image: url(./assets/img/testimonial_background.jpg);">
+    <div class="container">
+    <div id="carouselTestimonials" class="carousel slide" data-ride="carousel">
+
+        <ol class="carousel-indicators" >
+          <li *ngFor="let testimonial of testimonials; let i = index; let isFirst = first"
+              data-target="#carouselTestimonials"
+              attr.data-slide-to="{{i}}"
+              [ngClass]="{'active': isFirst}"
+          >
+          </li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item" *ngFor="let testimonial of testimonials; let i = index; let isFirst = first"  [ngClass]="{'active': isFirst}" >
+            <div class="row">
+              <div class="col-md-1 col-sm-12 col-xs-12 mr-auto ml-auto">
+                <img class="testimonial-avatar" src="assets/img/testimonials/{{testimonial.id}}.jpg">
+              </div>
+
+              <div class="col-md-10 col-sm-12 col-xs-12 mr-auto ml-auto">
+                <p class="title">{{testimonial.name}}</p>
+                <p class="caption">{{testimonial.position}} at {{testimonial.company}}</p>
+                <hr>
+              </div>
+              <br>
+
+              <div class="col-md-10 col-sm-12 col-12 mr-auto ml-auto">
+                <p class="description">{{testimonial.feedback}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="circle">
+          <p><i class="fa fa-quote-right" aria-hidden="true"></i></p>
+        </div>
+
+
+        <a class="carousel-control-prev" href="#carouselTestimonials" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselTestimonials" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+
+    </div>
+
+
+  </div>
+</div>
