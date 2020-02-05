@@ -14,18 +14,19 @@
         <div class="carousel-inner" role="listbox">
           <div class="carousel-item" *ngFor="let testimonial of testimonials; let i = index; let isFirst = first"  [ngClass]="{'active': isFirst}" >
             <div class="row">
-              <div class="col-md-1 col-sm-12 col-xs-12 mr-auto ml-auto">
+              <div class="offset-lg-1 col-lg-1 col-md-2 col-sm-2 col-2">
                 <img class="testimonial-avatar" src="assets/img/testimonials/{{testimonial.id}}.jpg">
               </div>
 
-              <div class="col-md-10 col-sm-12 col-xs-12 mr-auto ml-auto">
+              <div class="col-lg-9 col-md-10 col-sm-10 col-10">
                 <p class="title">{{testimonial.name}}</p>
                 <p class="caption">{{testimonial.position}} at {{testimonial.company}}</p>
-                <hr>
               </div>
+
               <br>
 
               <div class="col-md-10 col-sm-12 col-12 mr-auto ml-auto">
+                <hr>
                 <p class="description">{{testimonial.feedback}}</p>
               </div>
             </div>
