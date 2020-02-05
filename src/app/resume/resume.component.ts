@@ -20,7 +20,7 @@ export class ResumeComponent implements OnInit {
       'Developed Python scripts for treating large data volumes from SQL, LDAP and CSV sources',
       'Full-stack development of an i18n PHP web application for a large user population (Symfony)',
       'DevOps tasks (CentOS/RHEL administration, Git, Docker, Dockerfile, Logstash, CI/CD)',
-      'Speaker'
+      'Speaker (nationwide and international conferences)'
       ]
     },
     {
