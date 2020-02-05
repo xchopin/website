@@ -2,6 +2,8 @@ pre {
   display: inherit;
   font-size: 100%;
   color: inherit;
+  white-space: pre-wrap;
+  word-break: keep-all
 }
 
 .terminal {
@@ -14,7 +16,6 @@ pre {
   font-size: 14px;
   line-height: 1.5;
   box-sizing: border-box;
-
 
 }
 

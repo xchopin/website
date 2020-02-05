@@ -3,14 +3,12 @@
   .testimonial-avatar {
     margin-top: 80px;
     margin-bottom: 10px;
-    margin-left: 20px;
-    width: 80px;
+    width: 85px;
     border-radius: 50%;
-    @media screen and (max-width:990px) {
-      width: 40px;
-      position: absolute;
-      top: -25px;
-      right: 40px;
+    filter: grayscale(50%);
+    @media screen and (max-width:767px) {
+      margin-top: 80px;
+      width: 60px;
     }
   }
 
@@ -18,11 +16,28 @@
     font-family: Roboto;
     margin-top: 80px;
     margin-bottom: 10px;
-    font-size: 21px;
+    font-size: 18px;
     font-weight: bolder;
+    padding-left: 1.5em;
 
-    @media screen and (max-width:760px) {
-        margin-top: 50px
+    @media screen and (max-width:767px) {
+      margin-top: 70px;
+      font-size: 16px;
+    }
+
+  }
+
+
+  .caption {
+    font-size: 18px;
+    line-height: 24px;
+    font-style: italic;
+    opacity: .7;
+    margin-bottom: 20px;
+    padding-left: 1.5em;
+
+    @media screen and (max-width:767px) {
+      font-size: 14px;
     }
 
   }
@@ -31,14 +46,11 @@
     margin-bottom: 60px;
     font-size: 18px;
 
-  }
-
-  .caption {
-    font-size: 18px;
-    line-height: 24px;
-    font-style: italic;
-    opacity: .7;
-    margin-bottom: 20px;
+    @media screen and (max-width:767px) {
+      font-size: 13px;
+      margin-left: 1em;
+      margin-right: 1em;
+    }
 
   }
 
@@ -74,7 +86,6 @@
   hr {
     border-top: 1px solid #a98a79;
     margin-bottom: 20px;
-    margin-left: 45px;
   }
 
 
