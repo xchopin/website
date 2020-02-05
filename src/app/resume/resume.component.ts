@@ -25,7 +25,7 @@ export class ResumeComponent implements OnInit {
     },
     {
       title: 'Web Architect Intern @ Saint-Gobain',
-      date: 'April 2017 - June 2019',
+      date: 'April 2017 - June 2017',
       location: 'Pont-à-Mousson, France',
       description: 'Design and development of applications for the Bureau of International Business of Saint-Gobain PAM.',
       tasks: [
