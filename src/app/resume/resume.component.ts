@@ -8,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 export class ResumeComponent implements OnInit {
 
    experiences = [
+     {
+       title: 'Software Development Consultant @ Boursorama',
+       date: 'March 2020 - Present',
+       location: 'Nancy, France',
+       description: 'IT Consultant at Boursorama (Societe General group) -' +
+         ' Development of a bank and stock market web application with millions of clients.',
+       tasks: [
+         'PHP development (Symfony)',
+         'a11y improvement',
+         'Atlassian suite (Jira, Bitbucket, Confluence, Bamboo)',
+         'Kibana log analysis'
+       ]
+     },
     {
       title: 'Data Engineer @ University of Lorraine',
-      date: 'October 2017 - December 2019',
+      date: 'October 2017 - January 2020',
       location: 'Nancy, France',
       description: 'Lead developer for the creation of Big Data tools for the French Higher Education system' +
       ' in a machine-learning context (Learning Analytics).',
